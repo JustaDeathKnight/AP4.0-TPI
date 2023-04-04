@@ -47,21 +47,21 @@ public class Pronostico {
             if (this.resultado == ResultadoEnum.EMPATE)
                 puntos = 1;
         } else if (equipo1 > equipo2) {
-            if (this.resultado == ResultadoEnum.GANADOR_EQUIPO1)
+            if (this.resultado == ResultadoEnum.GANA_EQUIPO1)
                 puntos = 1;
         } else if (equipo1 < equipo2)
-            if (this.resultado == ResultadoEnum.GANADOR_EQUIPO2)
+            if (this.resultado == ResultadoEnum.GANA_EQUIPO2)
                 puntos = 1;
         return puntos;
     }
 
     public String pronostico() {
         String pronosticoString = "Undefined";
-        if (this.resultado == ResultadoEnum.GANADOR_EQUIPO1)
+        if (this.resultado == ResultadoEnum.GANA_EQUIPO1)
             pronosticoString = "Gana " + this.getEquipo1().getNombre();
         else if (resultado == ResultadoEnum.EMPATE)
             pronosticoString = "Empate";
-        else if (this.resultado == ResultadoEnum.GANADOR_EQUIPO2)
+        else if (this.resultado == ResultadoEnum.GANA_EQUIPO2)
             pronosticoString = "Gana " + this.getEquipo2().getNombre();
         return pronosticoString;
     }

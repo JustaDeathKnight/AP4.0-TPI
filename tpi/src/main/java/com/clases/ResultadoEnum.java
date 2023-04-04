@@ -1,5 +1,5 @@
 package com.clases;
 
 public enum ResultadoEnum {
-    GANADOR_EQUIPO1, EMPATE, GANADOR_EQUIPO2
+    GANA_EQUIPO1, EMPATE, GANA_EQUIPO2
 }

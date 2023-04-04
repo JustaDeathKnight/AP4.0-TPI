@@ -1,7 +1,7 @@
 package com.clases;
 
 public class Equipo {
-    private String nombre;
+	private String nombre;
 	private String descripcion;
 
 	// Metodos Triviales Getters and Setters

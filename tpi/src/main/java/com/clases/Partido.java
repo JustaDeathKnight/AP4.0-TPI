@@ -38,4 +38,7 @@ public class Partido {
     public void setGolesEquipo2(int golesEquipo2) {
         this.golesEquipo2 = golesEquipo2;
     }
+
+    // Se podria agregar una funcion que cargue un ResultadoENUM en base a los
+    // goles, dejando disponible para comparaciones directas en el calculo de puntos
 }
