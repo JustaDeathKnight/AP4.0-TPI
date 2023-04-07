@@ -19,8 +19,8 @@ public class ProgramaPrincipal {
         Equipo unEquipo2;
 
         // Ruta Archivos
-        Path archivoPartidos = Paths.get("tpi/src/assets/resultados.txt");
-        Path archivoPronosticos = Paths.get("tpi/src/assets/pronosticos.txt");
+        Path archivoPartidos = Paths.get("tpi-etapa1/src/assets/resultados.txt");
+        Path archivoPronosticos = Paths.get("tpi-etapa1/src/assets/pronosticos.txt");
 
         // Lectura Archivo Partidos
         for (String linea : Files.readAllLines(archivoPartidos)) {
