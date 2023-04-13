@@ -26,3 +26,11 @@ CREATE VIEW pronosticos AS
         (SELECT id_equipo, nombre_equipo as equipo1 FROM equipo) AS equipo1, 
         (SELECT id_equipo, nombre_equipo as equipo2 FROM equipo) AS equipo2 
     WHERE pronostico.id_equipo1 = equipo1.id_equipo AND pronostico.id_equipo2 = equipo2.id_equipo;
+
+(SELECT * FROM resultado as resultados inner join equipo as equipo2 on resultados.cod_equipo1=equipo2.cod_equipo inner join tpi.equipo as equipo3   
+
+ on (  resultados.cod_equipo2=equipo3.cod_equipo) )   ;
+
+(SELECT equipo2.nombre_equipo, goles_equipo1, goles_equipo2, equipo3.nombre_equipo FROM partido as resultados inner join equipo as equipo2 on resultados.id_equipo1=equipo2.id_equipo inner join equipo as equipo3   
+
+ on (  resultados.id_equipo2=equipo3.id_equipo) )   ;
