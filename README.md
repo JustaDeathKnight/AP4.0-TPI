@@ -31,4 +31,4 @@ sumarán puntos y se obtendrá un listado final.
 A continuación, se propone un diagrama de clases inicial que puede ser modificado en
 cualquier momento.
 
-![model.png]
+![Image](modelo.png)
